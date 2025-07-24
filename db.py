@@ -6,12 +6,12 @@ class Database:
         self.connection = None
         try:
             self.connection = pymysql.connect(
-                host='localhost',  # 로컬 PC
-                # host='mariadb', # cloudtype 서버
+                # host='localhost',  # 로컬 PC
+                host='mariadb', # cloudtype 서버
                 port=3306,
                 database='test',  # test 데이터베이스 사용
                 user='root',
-                password='8948864a',  # mariadb 설치 당시의 패스워드, 실제 환경에서는 보안을 위해 환경변수 등을 사용
+                password='Yousung0528!',  # mariadb 설치 당시의 패스워드, 실제 환경에서는 보안을 위해 환경변수 등을 사용
                 charset='utf8mb4',
                 cursorclass=pymysql.cursors.DictCursor   # 쿼리 결과를 딕셔너리로 변환
             )
